@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ethnotic</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+			  color: #ffffff; /* İstediğiniz renk kodunu buraya ekleyin */
+
+			}
+			
+		  </style>
+	</head>
+	
+	<body class="is-preload">
+			
+		<!--YUKARI KAYDIRMA BUTONU-->
+
+		<button id="myBtn">&uarr;</button> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var myButton = $("#myBtn");
+			var isScrolling = false; // Kaydırmanın durumu
+
+			myButton.click(function() {
+				smoothScrollToTop();
+			});
+
+			$(window).scroll(function() {
+				// Kaydırma hareketini takip eder
+				if (isScrolling) {
+					clearTimeout(isScrolling);
+				}
+
+				// Kaydırmayı durdurmak için 0.5 saniye bekler
+				isScrolling = setTimeout(function() {
+					isScrolling = false;
+				}, 500);
+			});
+
+			// Sayfanın üstüne animasyonlu bir şekilde kaydırma işlemi
+			function smoothScrollToTop() {
+				var currentScroll = $(document).scrollTop();
+
+				if (currentScroll > 0 && !isScrolling) {
+					isScrolling = true;
+					$("html, body").animate({ scrollTop: 0 }, "slow", function() {
+						isScrolling = false;
+					});
+				}
+			}
+		});
+	</script>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1 style="font-family: 'Sans-serif', monospace;">Ethnotic</h1>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly" style="width: 120px; height: auto;" >&nbsp;</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo" style="font-size: 50px; font-family: 'Sans-serif', monospace;">Ethnotic</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">About Us</a></li>
+							<li><a href="generic.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">Music</a></li>
+							<li><a href="elements.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">Game Audio</a></li>
+						</ul>
+						<ul class="icons alt">
+							<li><a href="https://www.instagram.com/ethnotic/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/company/ethnoticmusic/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.facebook.com/ethnoticmusic" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://t.me/kayranasirlioglu" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2  style="font-family: 'Sans-serif', monospace;">About Us</h2>
+									<p style="font-size: 20px; color: white;">
+										Ethnotic is a duo that takes its inspiration from the essence of humanity and presents it to the whole world with ethno-atmospheric vibes by blending the endless melody offered by the universe with eastern melodies.
+
+										With a mission to introduce the West to the rhythms and notes that assimilated the social life styles of different origins whom left their individual identities aside, Ethnotic presents these tunes, which are often heard in the east, to their listeners on an electronic basis.
+										</p>
+									
+									
+									<p style="font-size: 20px">Feel free to contact us below!</p>
+								</header>
+								<a class="image main"><img src="4.JPG" alt="" style="width: 90%; height: auto; display: block; margin: 0 auto;" /></a>
+							</article>
+					</div>
+
+					<div id="main">
+						<article class="post featured">
+							<header class="major">
+								<h2 style="font-family: 'Sans-serif', monospace;">OUR LATEST WORK</h2>
+								<video width="640" height="480" controls>
+									<source src="Shaar - First Teaser (Updated).mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</header>
+						</article>
+					</div>
+
+					
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h2 style="font-size: 40px; color: rgb(255, 255, 255); font-family: 'Sans-serif', monospace;">Contact<br>
+									<a href="mailto:ethnoticmusic@gmail.com" style="font-size: 20px; padding: 2px; color: rgb(255, 255, 255); font-family: 'Sans-serif', monospace; border: 5px solid white; padding: 10px;">ethnoticmusic@gmail.com</a>
+<br>
+								<ul class="icons alt">
+									<li><a href="https://www.instagram.com/ethnotic/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/company/ethnoticmusic/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.facebook.com/ethnoticmusic" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://t.me/kayranasirlioglu" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="icons alt">
+							<p style="font-style: italic; text-transform: none; text-align: center;">&copy; Copyright 2022. <br>
+							All rights reserved.</p>							
+						</ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ethnotic</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+			  color: #ffffff; /* İstediğiniz renk kodunu buraya ekleyin */
+			}
+		  </style>
+		  
+	</head>
+	<body class="is-preload">
+
+		<!--YUKARI KAYDIRMA BUTONU-->
+
+		<button id="myBtn">&uarr;</button> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var myButton = $("#myBtn");
+			var isScrolling = false; // Kaydırmanın durumu
+
+			myButton.click(function() {
+				smoothScrollToTop();
+			});
+
+			$(window).scroll(function() {
+				// Kaydırma hareketini takip eder
+				if (isScrolling) {
+					clearTimeout(isScrolling);
+				}
+
+				// Kaydırmayı durdurmak için 0.5 saniye bekler
+				isScrolling = setTimeout(function() {
+					isScrolling = false;
+				}, 500);
+			});
+
+			// Sayfanın üstüne animasyonlu bir şekilde kaydırma işlemi
+			function smoothScrollToTop() {
+				var currentScroll = $(document).scrollTop();
+
+				if (currentScroll > 0 && !isScrolling) {
+					isScrolling = true;
+					$("html, body").animate({ scrollTop: 0 }, "slow", function() {
+						isScrolling = false;
+					});
+				}
+			}
+		});
+	</script>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+			
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo" style="font-size: 50px; font-family: 'Sans-serif', monospace;">Ethnotic</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">About Us</a></li>
+							<li><a href="generic.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">Music</a></li>
+							<li class="active"><a href="elements.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">Game Audio</a></li>
+						</ul>
+						<ul class="icons alt">
+							<li><a href="https://www.instagram.com/ethnotic/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/company/ethnoticmusic/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.facebook.com/ethnoticmusic/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://t.me/kayranasirlioglu" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2  style="font-family: 'Sans-serif', monospace;">Game Audio Design</h2>
+									<br>
+									<p style="font-size: 20px;">Here is the full list of games that we worked on.</p>
+							</article>						
+						<!-- IMAGES -->
+<!DOCTYPE html>
+<html>
+<head>
+	
+  <title>Games</title>
+  <style>
+    .image-row{
+      display: flex;
+      justify-content: space-between;
+	  flex-wrap: wrap;
+    }
+
+    .image-wrapper {
+      text-align: center;
+	  margin-right: 10px;
+	  width: 30%;
+	  margin-bottom: 20px;
+    }
+
+	.image-wrapper IMG {
+		width: 100%;
+		height: auto;
+		max-width: 200px;
+		
+	}
+
+	.image-wrapper h3 {
+    max-width: 100%;
+    height: auto;
+    color: #ffffff;
+    font-family: 'Sans-serif', monospace;
+    margin-top: 10px; /* Başlıkların resimlerden aşağıda yer alması için margin-top değerini ayarlayın */
+  }
+
+    .image-wrapper p {
+      text-align: center;
+    }
+	
+	.store-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	.store-link a {
+		display: inline-block;
+	}
+
+	.store-link img {
+		width: 120px;
+		height: auto;
+		margin: 0 5px;
+	}
+
+	@media (max-width: 950px) {
+		.store-link {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: 950px) {
+      .responsive-image {
+        width: 10%;
+        height: auto;
+      }
+    }
+
+    .image-wrapper p {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="image-row">
+    <div class="image-wrapper">
+      <img src="GAMES/BuckedIsland.png" alt=""style="max-width: 100%;">
+      <h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Bucked <br>Island</h3>
+	  <div class="store-link">
+        <a class="kaydirilmis-yazi" href="https://play.google.com/store/apps/details?id=com.BuckedGames.BuckedIslandV1" target="_blank">
+          <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+        </a>
+        <a class="kaydirilmis-yazi" href="https://apps.apple.com/tr/app/bucked-island/id1589031360" target="_blank">
+        <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+        </a>
+      </div>
+    </div>
+
+	<div class="image-wrapper">
+		<img src="GAMES/CountMaster2.png" alt=""style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Count With <br>Bucked</h3>
+		<div class="store-link">
+			<a href="https://play.google.com/store/apps/details?id=com.buckedgames.buckedcountV2" target="_blank">
+			  <img src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+			</a>
+			<a href="https://apps.apple.com/nz/app/count-with-bucked/id1589801109" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+			</a>
+		  </div>
+	  </div>
+
+    <div class="image-wrapper">
+      <img src="GAMES/CountMaster.png" alt=""style="max-width: 100%;">
+      <h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Count With <br>Bucked X</h3>
+	  <div class="store-link">
+        <a href="https://play.google.com/store/apps/details?id=com.buckedgames.buckedcountxV2" target="_blank">
+          <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+        </a>
+        <a href="https://apps.apple.com/nz/app/count-with-bucked-x/id1602682118" target="_blank">
+          <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+<body>
+	<div class="image-row">
+	  <div class="image-wrapper">
+		<img src="GAMES/DockSkater.png" alt=""style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Dock Skater</h3>
+		<div class="store-link">
+			<a href="https://play.google.com/store/apps/details?id=com.BuckedGames.DockSkaterV1" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+			</a>
+			<a href="https://apps.apple.com/nz/app/beach-skater/id1596298213" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+			</a>
+		  </div>
+	  </div>
+
+	  <div class="image-wrapper">
+		<img src="GAMES/MathSpace.png" alt=""style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Math Space</h3>
+		<div class="store-link">
+			<a href="https://play.google.com/store/apps/details?id=com.buckedgames.mathspacev2" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+			</a>
+			<a href="https://apps.apple.com/nz/app/math-space/id1588723360" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+			</a>
+		  </div>
+	  </div>
+
+	  <div class="image-wrapper">
+		<img src="GAMES/Sudoku.png" alt=""style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Shape Sudoku</h3>
+		<div class="store-link">
+			<a href="https://play.google.com/store/apps/details?id=com.BuckedGames.Sudoku" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+			</a>
+			<a href="https://apps.apple.com/nz/app/shape-sudoku/id1594163112" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+			</a>
+		  </div>
+	  </div>
+	</div>
+  </body>
+
+  <body>
+	<div class="image-row">
+	  <div class="image-wrapper">
+		<img src="GAMES/TriviaDrive.png" alt="">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Trivia Drive</h3>
+		<div class="store-link">
+			<a href="https://play.google.com/store/apps/details?id=com.BuckedGames.GenelKulturTr" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+			</a>
+			<a href="https://apps.apple.com/tr/app/trivia-drive-tr/id1645544972" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+			</a>
+		  </div>
+	  </div>
+
+	  <div class="image-wrapper">
+		<img src="GAMES/TriviaFlight.png" alt="">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;">Trivia Flight</h3>
+		<div class="store-link">
+			<a href="https://play.google.com/store/apps/details?id=com.BuckedGames.GenelKultur" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/playstore.svg" alt="Google Play Store">
+			</a>
+			<a href="https://apps.apple.com/tr/app/trivia-flight/id1619977113" target="_blank">
+			  <img class="responsive-image" src="STOREIMAGE/appstore.svg" alt="Apple App Store">
+			</a>
+		  </div>
+	  </div>
+	</div>
+  </body>
+</html>
+
+
+					
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h2 style="font-size: 40px; color: rgb(0, 0, 0); font-family: 'Sans-serif', monospace;">Contact<br>
+								<a href="mailto:ethnoticmusic@gmail.com" style="font-size: 20px; padding: 2px; color: black; font-family: 'Sans-serif', monospace;">ethnoticmusic@gmail.com</a>
+<br>
+							<ul class="icons alt">
+								<li><a href="https://www.instagram.com/ethnotic/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/company/ethnoticmusic/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.facebook.com/ethnoticmusic/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://t.me/kayranasirlioglu" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul class="icons alt">
+						<p style="font-style: italic; text-transform: none; text-align: center;">&copy; Copyright 2023. <br>
+							All rights reserved.</p>
+					</ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

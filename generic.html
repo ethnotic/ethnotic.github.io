@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<title>Ethnotic</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+			  color: #ffffff; /* İstediğiniz renk kodunu buraya ekleyin */
+			}
+		  </style>
+		  
+	</head>
+	<body class="is-preload">
+
+		<!--YUKARI KAYDIRMA BUTONU-->
+
+		<button id="myBtn">&uarr;</button> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var myButton = $("#myBtn");
+			var isScrolling = false; // Kaydırmanın durumu
+
+			myButton.click(function() {
+				smoothScrollToTop();
+			});
+
+			$(window).scroll(function() {
+				// Kaydırma hareketini takip eder
+				if (isScrolling) {
+					clearTimeout(isScrolling);
+				}
+
+				// Kaydırmayı durdurmak için 0.5 saniye bekler
+				isScrolling = setTimeout(function() {
+					isScrolling = false;
+				}, 500);
+			});
+
+			// Sayfanın üstüne animasyonlu bir şekilde kaydırma işlemi
+			function smoothScrollToTop() {
+				var currentScroll = $(document).scrollTop();
+
+				if (currentScroll > 0 && !isScrolling) {
+					isScrolling = true;
+					$("html, body").animate({ scrollTop: 0 }, "slow", function() {
+						isScrolling = false;
+					});
+				}
+			}
+		});
+	</script>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+			
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo" style="font-size: 50px; font-family: 'Sans-serif', monospace;">Ethnotic</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">About Us</a></li>
+							<li class="active"><a href="generic.html" style="font-size: 20px; font-family: 'Sans-serif', monospace; ">Music</a></li>
+							<li><a href="elements.html" style="font-size: 20px; font-family: 'Sans-serif', monospace;">Game Audio</a></li>
+						</ul>
+						<ul class="icons alt">
+							<li><a href="https://www.instagram.com/ethnotic/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/company/ethnoticmusic/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.facebook.com/ethnoticmusic" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://t.me/kayranasirlioglu" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2 style="font-family: 'Sans-serif', monospace;">Music</h2>
+									<br>
+									<p style="font-size: 20px;">Here are some of the artists we have worked with so far. Many more are to come so stay tuned!</p>
+								</article>
+							
+
+
+
+
+						<!-- IMAGES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music</title>
+  <style>
+    .image-row{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .image-wrapper {
+      text-align: center;
+	  margin-right: 10px;
+	  margin-top: 10px;
+	  width: 30%
+	  
+    }
+
+	.image-wrapper IMG {
+		width: 200px;
+		height: 200px;
+	}
+
+    .image-wrapper p {
+      text-align: center;
+	  
+	  
+    }
+
+	.bottom-image{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.bottom-image img{
+		width: 200px;
+		height: 200px;
+	}
+	
+  </style>
+</head>
+<body>
+  <div class="image-row">
+    <div class="image-wrapper">
+      <img src="covers/Alezer.jpeg" alt="Alezer"style="max-width: 100%; height: auto;">
+      <h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>Alezer</h3>
+      <p class="kayma-yazi" style="max-width: 100%; height: auto; font-family: 'Sans-serif', monospace;">Mixing</p>
+    </div>
+    <div class="image-wrapper">
+      <img src="covers/BMOO.jpeg" alt="BMOO 2"style="max-width: 100%; height: auto;">
+      <h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>BAU Oda Orkestrası</h3>
+      <p style="max-width: 100%; height: auto; font-family: 'Sans-serif', monospace;">Recording<br>Mixing/Mastering</p>
+    </div>
+    <div class="image-wrapper">
+      <img src="covers/BPKLogo.jpeg" alt="BPK 3"style="max-width: 100%; height: auto;">
+      <h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>BAU POLİFONİK KORO</h3>
+      <p style="max-width: 100%; height: auto; font-family: 'Sans-serif', monospace;">Recording<br>Mixing/Mastering</p>
+    </div>
+  </div>
+</body>
+<body>
+	<div class="image-row">
+	  <div class="image-wrapper">
+		<img src="covers/BeratErcan.jpeg" alt="Berat Ercan"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>Berat Ercan</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Mastering</p>
+	  </div>
+	  <div class="image-wrapper">
+		<img src="covers/Ethnotic.jpeg" alt="Ethnotic"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>Ethnotic</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Recording<br>Mixing/Mastering</p>
+	  </div>
+	  <div class="image-wrapper">
+		<img src="covers/EV.jpeg" alt="EV"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>EV The Band</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Mixing/Mastering</p>
+	  </div>
+	</div>
+  </body>
+  <body>
+	<div class="image-row">
+	  <div class="image-wrapper">
+		<img src="covers/Melda.jpeg" alt="Melda"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>Melda</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Recording<br>Mixing/Mastering</p>
+	  </div>
+	  <div class="image-wrapper">
+		<img src="covers/NURO.jpeg" alt="NURO"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>Nuro</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Recording<br>Mixing/Mastering</p>
+	  </div>
+	  <div class="image-wrapper">
+		<img src="covers/Ozan.jpeg" alt="Ozan"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>OZAN TEMİZKAN</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Mixing/Mastering</p>
+	  </div>
+	</div>
+  </body>
+  <body>
+	<div class="bottom-image">
+	  <div class="image-wrapper">
+		<img src="covers/polarnormal.jpeg" alt="polarnormal"style="max-width: 100%;">
+		<h3 style="max-width: 100%; height: auto; color: #ffffff; font-family: 'Sans-serif', monospace;"><br>Polar Normal</h3>
+		<p style="font-family: 'Sans-serif', monospace;">Mastering</p>
+	  </div>
+	</div>
+  </body>
+</html>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h2 style="font-size: 40px; color: rgb(0, 0, 0); font-family: 'Sans-serif', monospace;">Contact<br>
+								<a href="mailto:ethnoticmusic@gmail.com" style="font-size: 20px; padding: 2px; color: black; font-family: 'Sans-serif', monospace;">ethnoticmusic@gmail.com</a>
+<br>
+							<ul class="icons alt">
+								<li><a href="https://www.instagram.com/ethnotic/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/company/ethnoticmusic/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.facebook.com/ethnoticmusic" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://t.me/kayranasirlioglu" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul class="icons alt">
+						<p style="font-style: italic; text-transform: none; text-align: center;">&copy; Copyright 2023. <br>
+							All rights reserved.</p>
+					</ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
